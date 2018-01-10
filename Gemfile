@@ -31,6 +31,7 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'jquery-rails'
 gem 'devise'
 
+gem 'annotate'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
