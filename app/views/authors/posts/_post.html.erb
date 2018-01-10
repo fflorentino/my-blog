@@ -1,5 +1,5 @@
 <tr>
-	<td><%= link_to post.title, authors_posts_path(post) %></td>
+	<td><%= link_to post.title, authors_post_path(post) %></td>
 	<td colspan="" rowspan="" headers=""></td>
 	<% if post.published? %>
 		<td><%= link_to 'Unpublish', unpublish_authors_post_path(post), method: :put, class: 'btn btn-sm btn-primary' %></td>
