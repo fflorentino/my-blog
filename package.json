@@ -1,0 +1,11 @@
+{
+  "name": "ruby-blog",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Fabio Maran Florentino <fmf.florentino@gmail.com>",
+  "license": "MIT"
+}
