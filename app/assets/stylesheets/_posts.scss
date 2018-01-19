@@ -74,6 +74,27 @@
 
 }
 
+.posts.show {
+	.card {
+		.card-title {
+			border-bottom: 3px solid $light-blue;
+			display: inline-block;
+			font-size: 20px;
+			margin-top: 15px;
+		}
+		.card-subtitle {
+			margin-top: 2px;
+		}
+	}
+}
+
+
+.center-block {
+	margin-left: auto;
+	    margin-right: auto;
+	    display: block;
+}
+
 .a {
 	color: #2196f3 !important;
 }

@@ -1,12 +1,20 @@
 <% provide(:page_title, @post.title) %>
 <% provide(:blog_active, 'active') %>
 
-<div class="row">
-	<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-xl-center">
-		<h1> <%= @post.title %></h1>
-		<p> <%= @post.display_day_published %></p>
-		<%= @post.body.html_safe %> 
-
+<div class="row card">
+	<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-xl-center center-block">
+		<div class="card-title">
+			<h1> <%= @post.title %></h1>
+		</div>
+		<div class="card-subtitle mb-2 text-muted">
+			<p> <%= @post.display_day_published %></p>
+		</div>	
+		<div class="card-body">
+			<%= @post.body.html_safe %>
+		</div>
+			 
+	
+		
 		<div id="disqus_thread"></div>
 		<noscript>
 		Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
