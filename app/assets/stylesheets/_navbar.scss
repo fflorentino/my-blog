@@ -1,12 +1,18 @@
 .navbar {
 	border-radius: 0;
 	margin-bottom: 20px;
-	background-color: #2196f3;
+	background-color: $dark-gray;
+	.btn {
+		background-color: $cyan-light;
+		color: $dark-gray;
+		font-weight: bold;
+	}
 	.navbar-brand {
-		color: white;
+		color: $medium-gray;
 		font-weight: bolder;
 		.light {
 			font-weight: 300;
+			color: $cyan-light;
 		}
 	}
 	.navbar-toggler {
