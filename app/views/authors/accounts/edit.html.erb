@@ -1,0 +1,86 @@
+<% provide(:page_title, "Edit #{@account}") %>
+
+<div class="row">
+    <!-- Sectio to change personal setting like name, email, bio-->
+  <div class="col-md-6">
+    <%= form_tag authors_info_path, method: :put do %>
+      <%= fields_for :author do |f| %>
+        <div class="card">
+          <div class="card-block">
+            <div class="card-title">
+              <h4>Configurações de Perfil</h4>
+            </div>
+          </div>
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <div class="field">
+                <%= f.label :name %>
+                <%= f.text_field :name, value: current_author.name, class: 'form-control' %>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="field">
+                <%= f.label :email %>
+                <%= f.email_field :email, value: current_author.email, class: 'form-control' %>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="field">
+                <%= f.label :bio %>
+                <br>
+                <%= f.text_area :bio, value: current_author.bio, class: 'form-control' %>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <%= f.submit "Atualizar", class: "btn btn-primary" %>
+            </li>
+          </ul>
+        </div>
+      <% end %>
+    <% end %>
+</div>
+
+
+
+<!-- Sectio to change admintration setting like passaword-->
+  <div class="col-md-6">
+    <%= form_tag authors_change_password_path, method: :put do %>
+      <%= fields_for :author do |f| %>
+        <div class="card">
+          <div class="card-block">
+            <div class="card-title">
+              <h4>Alteração de senha</h4>
+            </div>
+          </div>
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <div class="field">
+                <%= f.label :current_password %>
+                <%= f.password_field :current_password, class: 'form-control' %>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="field">
+                <%= f.label :new_password %>
+                <%= f.password_field :new_password, class: 'form-control' %>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="field">
+                <%= f.label :new_password_confirmation %>
+                <br>
+                <%= f.password_field :new_password_confirmation, class: 'form-control' %>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <%= f.submit "Atualizar", class: "btn btn-primary" %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <% end -%>
+  <% end %>
+</div>
+

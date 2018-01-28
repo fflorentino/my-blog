@@ -1,3 +1,33 @@
 body {
-	background-color: $xdark-gray;
+	background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/SAKGwKC/cartoon-cloud-animation-with-loop_v211ezdke__F0005.png);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	color: $dark-gray;
+
+}
+
+h1, .card-title {
+	font-weight: bold;
+	color: $dark-gray !important;
+}
+
+h6 {
+	color: $dark-gray;
+	font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6, {
+	/*font-family: 'Roboto', sans-serif;*/
+	font-family: 'Montserrat', sans-serif;	
+}
+
+p, p span {
+	font-family: 'Merriweather', serif !important;
+	font-size: 20px;
+}
+
+.tags a {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 17px;
 }
