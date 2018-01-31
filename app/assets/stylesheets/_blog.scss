@@ -31,3 +31,25 @@ p, p span {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 17px;
 }
+
+.btn-light-cyan {
+	background-color: $cyan-light;
+	font-weight: bold;
+
+}
+
+.alert-success {
+	background-color: $dark-gray;
+	color: $cyan-light;
+	font-weight: bold;
+}.close span {
+	color: $cyan-light;
+}
+
+.alert-danger {
+	background-color: $dark-gray;
+	color: $cyan-light;
+	font-weight: bold;
+}.close span {
+	color: $cyan-light;
+}
